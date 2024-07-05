@@ -15,8 +15,8 @@ const Divider = ({ className = "" }: Props) => {
       <path
         d="M1.00012 1L1.00012 13"
         stroke="#D8DDED"
-        stroke-width="2"
-        stroke-linecap="round"
+        strokeWidth="2"
+        strokeLinecap="round"
       />
     </svg>
   );

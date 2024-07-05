@@ -16,8 +16,13 @@ const config: Config = {
         },
         neutral: {
           30: "#F4F6F9",
+          40: "#F0F1F5",
           50: "#E1E4EC",
+          110: "#7985A9",
           150: "#1D2A53",
+        },
+        primary: {
+          100: "#D83992",
         },
         shade: {
           120: "#1B1B1B",
