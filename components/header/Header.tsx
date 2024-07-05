@@ -6,14 +6,13 @@ import HeartIcon from "@/assets/icons/Heart";
 import ShoppingBagIcon from "@/assets/icons/ShoppingBag";
 import MenuIcon from "@/assets/icons/Menu";
 import DropdownAction from "../dropdown/DropdownAction";
+import NavAction from "./NavAction";
 
 const Header = () => {
   return (
     <header className=" bg-neutral-30">
-      <Container className="flex items-center justify-between py-6">
-        <div className="cursor-pointer md:hidden">
-          <MenuIcon className="w-8" />
-        </div>
+      <Container className="flex items-center justify-between py-4">
+        <NavAction />
         <DropdownAction />
         <div>
           <Link href="/" className="heading-2-sm font-extrabold">

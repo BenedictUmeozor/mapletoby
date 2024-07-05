@@ -18,7 +18,7 @@ const Ring = ({ className }: Props) => {
         r="27.5"
         transform="matrix(-4.37114e-08 -1 -1 4.37114e-08 52.8511 76)"
         stroke="#F798CD"
-        stroke-width="21"
+        strokeWidth="21"
       />
     </svg>
   );

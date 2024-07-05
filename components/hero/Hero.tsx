@@ -5,16 +5,20 @@ import SecondSquare from "@/assets/icons/SecondSquare";
 
 const Hero = () => {
   return (
-    <Container className="my-10 bg-custom_blue-20 relative overflow-hidden flex items-center justify-center h-64 rounded-3xl max-md:max-w-[95%]">
-      <h3 className="heading-1-sm text-center font-bold z-[2]">
-        In The Business of Helping Women of <br />{" "}
-        <span className=" text-[#F575BD]">Every Size</span> Own Their{" "}
-        <span className=" text-[#F575BD]">Sexy</span>
-      </h3>
-      <Ring className="absolute bottom-0 left-0" />
-      <FirstSquare className="absolute top-0 right-0 z-[1]" />
-      <SecondSquare className="absolute top-0 right-0" />
-    </Container>
+    <section className="relative bg-custom_blue-20  overflow-hidden flex items-center justify-center h-48 max-md:h-40">
+      <Container>
+        <div className="z-20 ">
+          <h3 className="heading-1-sm text-center font-bold z-[12] px-8">
+            In The Business of Helping Women of <br className="max-md:hidden" />
+            <span className=" text-[#F575BD]">Every Size</span> Own Their{" "}
+            <span className=" text-[#F575BD]">Sexy</span>
+          </h3>
+        </div>
+        <Ring className="absolute bottom-0 left-0 z-[1]" />
+        <FirstSquare className="absolute top-0 right-0 max-md:-right-10" />
+        <SecondSquare className="absolute top-0 right-0 max-md:-right-2" />
+      </Container>
+    </section>
   );
 };
 export default Hero;

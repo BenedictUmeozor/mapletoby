@@ -15,6 +15,7 @@ const config: Config = {
           80: "#6A77A0",
         },
         neutral: {
+          10: "#F8FAFB",
           30: "#F4F6F9",
           40: "#F0F1F5",
           50: "#E1E4EC",
