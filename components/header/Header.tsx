@@ -37,7 +37,7 @@ const Header = () => {
         <div>
           <div className="flex items-center gap-6 max-md:gap-3">
             <div className="cursor-pointer">
-              <SearchIcon className="w-8" />
+              <SearchIcon className="w-7" />
             </div>
             <div className="cursor-pointer max-md:hidden">
               <UserIcon className="w-8" />
