@@ -33,8 +33,8 @@ const links: LinkInterface[] = [
 
 const Footer = () => {
   return (
-    <footer className=" bg-neutral-30 pt-4">
-      <div className="mt-8 pt-6 pb-24 border-t border-dashed border-custom_blue-40 overflow-y-hidden relative max-md:pb-10">
+    <footer className=" bg-neutral-30 pt-4 ">
+      <div className="mt-8 pt-6 pb-24 border-t border-dashed border-custom_blue-40 overflow-y-hidden relative max-md:pb-10 overflow-x-hidden">
         <Container className="flex max-md:block items-center gap-20">
           <div className="flex-1 max-md:mb-8">
             <Link
@@ -55,7 +55,7 @@ const Footer = () => {
                 className="h-full w-full px-3 bg-white rounded heading-6-sm border border-custom_blue-20 focus:outline-none pr-16"
                 placeholder="Enter your email address"
               />
-              <button className="absolute right-[6px] rounded-sm bg-shade-120 text-white h-8 w-14 heading-6-sm">
+              <button className="absolute top-1/2 transform -translate-y-1/2 right-[5px] rounded-sm bg-shade-120 text-white h-8 w-14 heading-6-sm">
                 Join
               </button>
             </div>
@@ -85,7 +85,7 @@ const Footer = () => {
         <div className="absolute left-0 w-full max-md:top-[95%] md:-bottom-8">
           <Container className=" flex items-center max-md:mt-5 gap-4 footer">
             <div className="flex-1 flex items-center justify-start">
-              <p className=" text-custom_blue-30 text-[3.5rem] max-md:text-[1.25rem]">
+              <p className=" text-custom_blue-30 text-[3.5rem] max-md:text-[1.125rem]">
                 EXCLUSIVE
               </p>
             </div>
@@ -93,7 +93,7 @@ const Footer = () => {
               <div className="h-4 w-4 max-md:h-2 max-md:w-2 bg-primary-50 rounded-full"></div>
             </div>
             <div className="flex-1">
-              <p className=" text-custom_blue-30 text-[3.5rem] max-md:text-[1.25rem]">
+              <p className=" text-custom_blue-30 text-[3.5rem] max-md:text-[1.125rem]">
                 VOGUE
               </p>
             </div>
@@ -101,7 +101,7 @@ const Footer = () => {
               <div className="h-4 w-4 max-md:h-2 max-md:w-2 bg-primary-50 rounded-full"></div>
             </div>
             <div className="flex items-center justify-center flex-1">
-              <p className="text-custom_blue-30 text-[3.5rem] max-md:text-[1.25rem]">
+              <p className="text-custom_blue-30 text-[3.5rem] max-md:text-[1.125rem]">
                 EXTRA-CHIC
               </p>
             </div>
