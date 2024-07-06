@@ -6,6 +6,12 @@
   font-size: 16px;
 }
 
+img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
 .display-1 {
   @apply text-[1.25rem] leading-[1.5] tracking-[0.325rem] max-md:text-base;
 }
@@ -31,7 +37,7 @@
 }
 
 .heading-2-sm {
-  @apply text-[1.5rem] leading-[1.5] tracking-[0.25rem] max-md:text-[1rem];
+  @apply text-[1.5rem] leading-[1.5] tracking-[0.125rem] max-md:text-[1rem];
 }
 
 .heading-3-sm {
@@ -62,7 +68,8 @@
   @apply text-[0.75rem] leading-[1.5] tracking-[0] max-md:text-[0.625rem];
 }
 
-.category-text {
+.category-text,
+button {
   white-space: nowrap;
 }
 
@@ -99,4 +106,8 @@
   left: 0;
   width: 100%;
   z-index: 30;
+}
+
+.showcase {
+  row-gap: 2.5rem;
 }
