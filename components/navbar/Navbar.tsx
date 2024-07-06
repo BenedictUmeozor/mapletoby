@@ -7,8 +7,8 @@ import InstagramIcon from "@/assets/icons/Instagram";
 import NigeraIcon from "@/assets/icons/Nigera";
 import TwitterIcon from "@/assets/icons/Twitter";
 import UserIcon from "@/assets/icons/User";
-import { memo } from "react";
-
+import { memo, useCallback, useState } from "react";
+import NavDropdown from "./NavDropdown";
 type Props = {
   open: boolean;
   action: () => void;
@@ -36,6 +36,8 @@ const categories = [
 ];
 
 const Navbar = memo(({ open, action }: Props) => {
+  const [showDropdown, setShowDropdown] = useState(false);
+
   return (
     <nav
       className={
@@ -44,7 +46,10 @@ const Navbar = memo(({ open, action }: Props) => {
       }
     >
       <header className="flex items-center bg-neutral-30 py-3 px-3 gap-4">
-        <div className="flex-[2] flex items-center justify-between gap-2 bg-white p-2 rounded-md cursor-pointer">
+        <div
+          className="flex-[2] relative flex items-center justify-between gap-2 bg-white p-2 rounded-md cursor-pointer"
+          onClick={() => setShowDropdown((prev) => !prev)}
+        >
           <div className="flex items-center gap-2">
             <NigeraIcon className="w-5" />
             <span className="heading-6-lg text-neutral-150">NGN</span>
@@ -52,16 +57,18 @@ const Navbar = memo(({ open, action }: Props) => {
           <ChevronDownIcon
             className={
               "w-5 transition-all duration-100 ease-linear " +
-              (!true ? "rotate" : "")
+              (showDropdown ? "rotate" : "")
             }
           />
+          {showDropdown && <NavDropdown action={() => setShowDropdown(false)} />}
         </div>
         <div className="flex-1 flex items-center gap-3">
-          <div className="cursor-pointer">
-            <UserIcon className="w-8" />
+          <div className="cursor-pointer relative">
+            <HeartIcon className="w-8" />
+            <div className="absolute top-2 right-1 h-2 w-2 rounded-full bg-primary-100"></div>
           </div>
           <div className="cursor-pointer">
-            <HeartIcon className="w-8" />
+            <UserIcon className="w-8" />
           </div>
         </div>
       </header>

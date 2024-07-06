@@ -17,6 +17,14 @@ const NavAction = () => {
     setMounted(true);
   }, []);
 
+  useEffect(() => {
+    if (showNav) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+  }, [showNav]);
+
   return (
     <>
       <div className="cursor-pointer md:hidden" onClick={openNav}>
