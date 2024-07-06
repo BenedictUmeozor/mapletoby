@@ -44,8 +44,8 @@ const Navbar = memo(({ open, action }: Props) => {
       }
     >
       <header className="flex items-center bg-neutral-30 py-3 px-3 gap-4">
-        <div className="flex-[2] flex items-center gap-2 bg-white p-2 rounded-md cursor-pointer">
-          <div className="flex items-center gap-1 r">
+        <div className="flex-[2] flex items-center justify-between gap-2 bg-white p-2 rounded-md cursor-pointer">
+          <div className="flex items-center gap-2">
             <NigeraIcon className="w-5" />
             <span className="heading-6-lg text-neutral-150">NGN</span>
           </div>

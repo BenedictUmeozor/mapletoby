@@ -6,8 +6,8 @@ type Props = {
 
 const Product = ({ image }: Props) => {
   return (
-    <div className="h-[350px]">
-      <div className="h-[260px] rounded-sm overflow-hidden">
+    <div>
+      <div className=" h-80 rounded-sm overflow-hidden max-md:h-[60vh]">
         <Image
           src={image}
           height={260}
