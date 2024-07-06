@@ -9,6 +9,9 @@ const Showcase = () => {
   return (
     <section>
       <Container>
+        <div className="md:hidden mt-8 mb-4">
+          <p className="text-shade-120 text-[0.85rem] font-semibold"><span className="text-neutral-130">SHOP</span> / ALL</p>
+        </div>
         <DesktopFilter />
         <MobileFilter />
         <div className="my-10 grid grid-cols-5 gap-8 showcase max-md:grid-cols-2 max-lg:grid-cols-3">

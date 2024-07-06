@@ -35,7 +35,7 @@ const Footer = () => {
   return (
     <footer className=" bg-neutral-30 pt-4">
       <div className="mt-8 pt-6 pb-24 border-t border-dashed border-custom_blue-40 overflow-y-hidden relative max-md:pb-10">
-        <Container className="flex max-md:block items-center gap-8">
+        <Container className="flex max-md:block items-center gap-20">
           <div className="flex-1 max-md:mb-8">
             <Link
               href="/"
@@ -52,15 +52,15 @@ const Footer = () => {
             <div className="mt-2 h-10 flex items-center relative">
               <input
                 type="text"
-                className="h-full w-full px-3 bg-white rounded heading-6-sm focus:outline-none pr-16"
+                className="h-full w-full px-3 bg-white rounded heading-6-sm border border-custom_blue-20 focus:outline-none pr-16"
                 placeholder="Enter your email address"
               />
-              <button className="absolute right-1 bg-shade-120 text-white h-9 w-14 heading-6-sm">
+              <button className="absolute right-[6px] rounded-sm bg-shade-120 text-white h-8 w-14 heading-6-sm">
                 Join
               </button>
             </div>
           </div>
-          <div className="flex-[3] flex items-center max-md:block">
+          <div className="flex-[3] flex items-start max-md:block gap-12">
             {links.map((link) => (
               <div key={link.title} className="flex-1 max-md:mb-6">
                 <h5 className="text-shade-120 font-bold heading-6-lg">
