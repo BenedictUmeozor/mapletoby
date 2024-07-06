@@ -2,7 +2,7 @@
 
 const Overlay = () => {
   return (
-    <div className="overlay"></div>
+    <div className="overlay md:hidden"></div>
   )
 }
 export default Overlay
