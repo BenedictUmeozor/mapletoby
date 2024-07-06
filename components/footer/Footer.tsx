@@ -83,20 +83,24 @@ const Footer = () => {
           </div>
         </Container>
         <div className="absolute left-0 w-full max-md:top-[95%] md:-bottom-8">
-          <Container className=" grid grid-cols-3 items-center max-md:mt-5 gap-4 footer">
-            <div className="">
+          <Container className=" flex items-center max-md:mt-5 gap-4 footer">
+            <div className="flex-1 flex items-center justify-start">
               <p className=" text-custom_blue-30 text-[3.5rem] max-md:text-[1.25rem]">
                 EXCLUSIVE
               </p>
             </div>
-            <div className="flex items-center justify-between">
-              <div className="h-4 w-4 bg-primary-50 rounded-full"></div>
+            <div className="flex-1 flex items-center justify-center">
+              <div className="h-4 w-4 max-md:h-2 max-md:w-2 bg-primary-50 rounded-full"></div>
+            </div>
+            <div className="flex-1">
               <p className=" text-custom_blue-30 text-[3.5rem] max-md:text-[1.25rem]">
                 VOGUE
               </p>
-              <div className="h-4 w-4 bg-primary-50 rounded-full mr-5"></div>
             </div>
-            <div className="flex items-center justify-center">
+            <div className="flex-1 flex items-center justify-center">
+              <div className="h-4 w-4 max-md:h-2 max-md:w-2 bg-primary-50 rounded-full"></div>
+            </div>
+            <div className="flex items-center justify-center flex-1">
               <p className="text-custom_blue-30 text-[3.5rem] max-md:text-[1.25rem]">
                 EXTRA-CHIC
               </p>
