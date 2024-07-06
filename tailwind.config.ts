@@ -12,17 +12,22 @@ const config: Config = {
         custom_blue: {
           20: "#EBEEF6",
           30: "#D8DDED",
+          40: "#C4CCE5",
           80: "#6A77A0",
+          90: "#505D86"
         },
         neutral: {
           10: "#F8FAFB",
           30: "#F4F6F9",
           40: "#F0F1F5",
           50: "#E1E4EC",
+          100: "#97A0BC",
           110: "#7985A9",
+          140: "#37446D",
           150: "#1D2A53",
         },
         primary: {
+          50: "#FCDDEE",
           100: "#D83992",
         },
         shade: {

@@ -8,7 +8,7 @@ type Props = {
 
 const Product = ({ product }: Props) => {
   return (
-    <div>
+    <div className="max-w-[220px] mx-auto">
       <div className=" h-72 rounded-sm overflow-hidden max-md:h-[60vh]">
         <Image
           src={product.image}

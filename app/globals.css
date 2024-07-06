@@ -12,6 +12,12 @@ img {
   object-fit: cover;
 }
 
+main {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
 .display-1 {
   @apply text-[1.25rem] leading-[1.5] tracking-[0.325rem] max-md:text-base;
 }
