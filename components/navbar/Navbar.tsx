@@ -7,7 +7,7 @@ import InstagramIcon from "@/assets/icons/Instagram";
 import NigeraIcon from "@/assets/icons/Nigera";
 import TwitterIcon from "@/assets/icons/Twitter";
 import UserIcon from "@/assets/icons/User";
-import { memo, useCallback, useState } from "react";
+import { memo, useCallback, useEffect, useState } from "react";
 import NavDropdown from "./NavDropdown";
 type Props = {
   open: boolean;
@@ -38,6 +38,12 @@ const categories = [
 const Navbar = memo(({ open, action }: Props) => {
   const [showDropdown, setShowDropdown] = useState(false);
 
+  useEffect(() => {
+    if (!open) {
+      setShowDropdown(false);
+    }
+  }, [open]);
+
   return (
     <nav
       className={
@@ -60,7 +66,9 @@ const Navbar = memo(({ open, action }: Props) => {
               (showDropdown ? "rotate" : "")
             }
           />
-          {showDropdown && <NavDropdown action={() => setShowDropdown(false)} />}
+          {showDropdown && (
+            <NavDropdown action={() => setShowDropdown(false)} />
+          )}
         </div>
         <div className="flex-1 flex items-center gap-3">
           <div className="cursor-pointer relative">

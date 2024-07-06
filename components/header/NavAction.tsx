@@ -35,7 +35,7 @@ const NavAction = () => {
           <Navbar action={closeNav} open={showNav} />,
           document.body
         )}
-      {mounted && showNav && createPortal(<Overlay />, document.body)}
+      {mounted && showNav && createPortal(<Overlay action={closeNav} />, document.body)}
     </>
   );
 };

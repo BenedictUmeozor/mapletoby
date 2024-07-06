@@ -12,12 +12,15 @@
     "next": "14.2.4",
     "react": "^18",
     "react-dom": "^18",
+    "react-headroom": "^3.2.1",
+    "use-media": "^1.5.0",
     "uuid": "^10.0.0"
   },
   "devDependencies": {
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "@types/react-headroom": "^3.2.3",
     "@types/uuid": "^10.0.0",
     "eslint": "^8",
     "eslint-config-next": "14.2.4",

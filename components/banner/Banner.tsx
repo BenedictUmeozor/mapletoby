@@ -3,9 +3,9 @@ import Divider from "../ui-utils/Divider";
 const Banner = () => {
   return (
     <div className="flex items-center justify-center gap-4 bg-custom_blue-20 py-4 max-md:py-4">
-      <p className="text-shade-120 heading-5-lg font-bold">SAME DAY DELIVERY</p>
+      <p className="text-shade-120 text-[0.85rem] max-md:text-xs font-bold">SAME DAY DELIVERY</p>
       <Divider />
-      <p className=" text-custom_blue-80 heading-5-lg font-semibold">
+      <p className=" text-custom_blue-80 text-[0.85rem] max-md:text-xs font-semibold">
         ABUJA, LAGOS, PH
       </p>
     </div>

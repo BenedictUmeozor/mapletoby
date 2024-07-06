@@ -16,7 +16,7 @@ const Hero = () => {
         </div>
         <Ring className="absolute bottom-0 left-0 z-[1]" />
         <FirstSquare className="absolute top-0 right-0 max-md:-right-10" />
-        <SecondSquare className="absolute top-0 right-0 max-md:-right-2" />
+        <SecondSquare className="absolute top-0 right-0 max-md:-right-2 max-md:top-[20%]" />
       </Container>
     </section>
   );
