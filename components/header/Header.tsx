@@ -15,7 +15,7 @@ const kantumruy = Kantumruy_Pro({ subsets: ["latin"] });
 const Header = () => {
 
   return (
-    <header className=" bg-neutral-30 sticky top-0 z-20">
+    <header className=" bg-neutral-30 sticky top-0 z-50">
       <Container className="flex items-center justify-between py-4">
         <NavAction />
         <DropdownAction />

@@ -24,8 +24,8 @@ const Product = ({ product }: Props) => {
       </div>
       <div className="mt-3">
         <p className="heading-6-lg text-shade-120 font-semibold">
-          {product.description.length > 25
-            ? product.description.substring(0, 25) + "..."
+          {product.description.length > 20
+            ? product.description.substring(0, 20) + "..."
             : product.description}
         </p>
         <p className=" text-primary-100 mt-1 mb-3 font-bold">

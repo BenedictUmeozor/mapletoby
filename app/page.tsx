@@ -8,15 +8,21 @@ import Showcase from "@/components/showcase/Showcase";
 const Home = () => {
   return (
     <main className="h-full">
-      <header>
-        <Banner />
-        <Header />
-      </header>
+      <Banner />
+      <Header />
       <section>
         <CategoriesBar />
         <Hero />
         <Showcase />
       </section>
+      <div className="flex items-center justify-center gap-2 mb-8">
+        <span className="text-base">Loading</span>
+        <div className="dots">
+          <span className="dot"></span>
+          <span className="dot"></span>
+          <span className="dot"></span>
+        </div>
+      </div>
       <Footer />
     </main>
   );

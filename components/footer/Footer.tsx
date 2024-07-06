@@ -33,15 +33,15 @@ const links: LinkInterface[] = [
 
 const Footer = () => {
   return (
-    <footer className=" bg-neutral-30">
-      <div className="mt-8 pt-8 pb-24 border-t border-dashed border-custom_blue-40 overflow-y-hidden relative max-md:pb-10">
+    <footer className=" bg-neutral-30 pt-4">
+      <div className="mt-8 pt-6 pb-24 border-t border-dashed border-custom_blue-40 overflow-y-hidden relative max-md:pb-10">
         <Container className="flex max-md:block items-center gap-8">
           <div className="flex-1 max-md:mb-8">
             <Link
               href="/"
               className={
                 kantumruy.className +
-                " heading-5-lg block mb-2 text-shade-120 font-bold"
+                " text-lg block mb-2 text-shade-120 font-bold"
               }
             >
               MAPLETOBY

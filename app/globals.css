@@ -12,11 +12,6 @@ img {
   object-fit: cover;
 }
 
-/* main {
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-} */
-
 .display-1 {
   @apply text-[1.25rem] leading-[1.5] tracking-[0.325rem] max-md:text-base;
 }
@@ -115,4 +110,31 @@ button, .footer p {
 
 .showcase {
   row-gap: 2.5rem;
+}
+
+.dots {
+  display: flex;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #ff69b4;
+  margin: 0 4px;
+  opacity: 0;
+  animation: fadeDot 1.5s infinite;
+}
+
+.dot:nth-child(2) {
+  animation-delay: 0.5s;
+}
+
+.dot:nth-child(3) {
+  animation-delay: 1s;
+}
+
+@keyframes fadeDot {
+  0%, 100% { opacity: 0; }
+  50% { opacity: 1; }
 }

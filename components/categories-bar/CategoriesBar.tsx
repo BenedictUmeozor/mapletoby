@@ -25,7 +25,7 @@ const categories = [
 
 const CategoriesBar = () => {
   return (
-    <div className=" bg-white border-b border-neutral-40 relative max-md:hidden">
+    <div className=" bg-white border-b border-neutral-40 max-md:hidden">
       <Container className="flex items-center gap-8 overflow-x-auto category-bar">
         {categories.map((category, index) => (
           <p
