@@ -30,10 +30,10 @@ const links: LinkInterface[] = [
 
 const Footer = () => {
   return (
-    <footer className=" bg-custom_blue-20">
+    <footer className=" bg-neutral-30">
       <div className="mt-16 pt-12 border-t border-dashed border-custom_blue-40">
-        <Container className="flex items-center gap-8">
-          <div className="flex-1">
+        <Container className="flex max-md:block items-center gap-8">
+          <div className="flex-1 max-md:mb-8">
             <Link
               href="/"
               className="heading-5-lg block mb-4 text-shade-120 font-bold"
@@ -54,9 +54,9 @@ const Footer = () => {
               </button>
             </div>
           </div>
-          <div className="flex-[3] flex items-center">
+          <div className="flex-[3] flex items-center max-md:block">
             {links.map((link) => (
-              <div key={link.title} className="flex-1">
+              <div key={link.title} className="flex-1 max-md:mb-8">
                 <h5 className="text-shade-120 font-bold heading-6-lg">
                   {link.title}
                 </h5>
@@ -76,17 +76,17 @@ const Footer = () => {
             ))}
           </div>
         </Container>
-        <Container className="grid grid-cols-3 items-center mt-32 gap-4">
+        <Container className="grid grid-cols-3 items-center mt-32 max-md:mt-5 gap-4 footer">
           <div className="flex items-center justify-center">
-            <p className=" text-custom_blue-30 text-[4rem]">EXCLUSIVE</p>
+            <p className=" text-custom_blue-30 text-[4rem] max-md:text-[1.25rem]">EXCLUSIVE</p>
           </div>
           <div className="flex items-center justify-between">
-            <div className="h-6 w-6 bg-primary-50 rounded-full"></div>
-            <p className=" text-custom_blue-30 text-[4rem]">VOGUE</p>
-            <div className="h-6 w-6 bg-primary-50 rounded-full mr-5"></div>
+            <div className="h-2 w-2 bg-primary-50 rounded-full"></div>
+            <p className=" text-custom_blue-30 text-[4rem] max-md:text-[1.25rem]">VOGUE</p>
+            <div className="h-2 w-2 bg-primary-50 rounded-full mr-5"></div>
           </div>
           <div className="flex items-center justify-center">
-            <p className="text-custom_blue-30 text-[4rem]">EXTRA-CHIC</p>
+            <p className="text-custom_blue-30 text-[4rem] max-md:text-[1.25rem]">EXTRA-CHIC</p>
           </div>
         </Container>
       </div>

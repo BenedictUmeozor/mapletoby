@@ -8,8 +8,8 @@ type Props = {
 
 const Product = ({ product }: Props) => {
   return (
-    <div className="max-w-[220px] mx-auto">
-      <div className=" h-72 rounded-sm overflow-hidden max-md:h-[60vh]">
+    <div className="max-w-[220px] mx-auto max-md:max-w-[163px]">
+      <div className=" h-72 rounded-sm overflow-hidden max-md:h-64">
         <Image
           src={product.image}
           height={260}
