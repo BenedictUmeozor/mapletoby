@@ -19,9 +19,9 @@ const NavAction = () => {
 
   useEffect(() => {
     if (showNav) {
-      document.body.style.overflow = "hidden";
+      document.body.classList.add("open")
     } else {
-      document.body.style.overflow = "auto";
+      document.body.classList.remove("open")
     }
   }, [showNav]);
 

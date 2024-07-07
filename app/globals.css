@@ -80,6 +80,12 @@ button,
   display: none;
 }
 
+body.open {
+  height: 100vh;
+  height: 100svh;
+  overflow: hidden;
+}
+
 .category-bar,
 .navbar section,
 .no-scrollbar {
