@@ -56,7 +56,7 @@ const Footer = () => {
                 className="h-full w-full px-3 bg-white rounded heading-6-sm border border-custom_blue-20 focus:outline-none pr-16"
                 placeholder="Enter your email address"
               />
-              <button className="absolute top-1/2 transform -translate-y-1/2 right-[5px] rounded-sm bg-shade-120 text-white h-8 w-14 heading-6-sm">
+              <button className="absolute top-1/2 transform -translate-y-1/2 right-[1px] rounded-sm bg-shade-120 text-white h-9 w-14 heading-6-sm">
                 Join
               </button>
             </div>
@@ -83,7 +83,7 @@ const Footer = () => {
             ))}
           </div>
         </Container>
-        <StoreBanner className="absolute left-0 w-full max-md:top-[95%] md:-bottom-8" />
+        <StoreBanner className="absolute left-[-0.125rem] w-full max-md:top-[95%] md:-bottom-8" />
       </div>
       <div className="border-t border-dashed border-custom_blue-40">
         <Container className="py-6 flex items-center justify-between">

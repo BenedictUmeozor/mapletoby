@@ -21,23 +21,38 @@ const Dropdown = ({ action }: Props) => {
         />
         <MaginifyinGlass className="absolute top-1/2 left-2 transform -translate-y-1/2 w-8" />
       </div>
-      <div className="flex items-center py-1 gap-1 px-2 mb-2 cursor-pointer hover:bg-neutral-30">
+      <div
+        className="flex items-center py-1 gap-1 px-4 mb-2 cursor-pointer hover:bg-neutral-30"
+        onClick={action}
+      >
         <NigeraIcon className="w-5" />
         <span className="heading-6-lg text-neutral-150">NGN</span>
       </div>
-      <div className="flex items-center py-1 gap-1 px-2 mb-2 cursor-pointer hover:bg-neutral-30">
+      <div
+        className="flex items-center py-1 gap-1 px-4 mb-2 cursor-pointer hover:bg-neutral-30"
+        onClick={action}
+      >
         <NigeraIcon className="w-5" />
         <span className="heading-6-lg text-neutral-150">NGN</span>
       </div>
-      <div className="flex items-center py-1 gap-1 px-2 cursor-pointer hover:bg-neutral-30">
+      <div
+        className="flex items-center py-1 gap-1 px-4 cursor-pointer hover:bg-neutral-30"
+        onClick={action}
+      >
         <NigeraIcon className="w-5" />
         <span className="heading-6-lg text-neutral-150">NGN</span>
       </div>
-      <div className="flex items-center py-1 gap-1 px-2 cursor-pointer hover:bg-neutral-30">
+      <div
+        className="flex items-center py-1 gap-1 px-4 cursor-pointer hover:bg-neutral-30"
+        onClick={action}
+      >
         <NigeraIcon className="w-5" />
         <span className="heading-6-lg text-neutral-150">NGN</span>
       </div>
-      <div className="flex items-center py-1 gap-1 px-2 cursor-pointer hover:bg-neutral-30">
+      <div
+        className="flex items-center py-1 gap-1 px-4 cursor-pointer hover:bg-neutral-30"
+        onClick={action}
+      >
         <NigeraIcon className="w-5" />
         <span className="heading-6-lg text-neutral-150">NGN</span>
       </div>

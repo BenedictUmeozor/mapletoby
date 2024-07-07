@@ -31,8 +31,8 @@ const Product = ({ product }: Props) => {
           href="/products/1"
           className="heading-6-lg text-shade-120 font-semibold block hover:underline"
         >
-          {product.description.length > 20
-            ? product.description.substring(0, 20) + "..."
+          {product.description.length > 15
+            ? product.description.substring(0, 15) + "..."
             : product.description}
         </Link>
         <p className=" text-primary-100 mt-1 mb-3 font-bold">

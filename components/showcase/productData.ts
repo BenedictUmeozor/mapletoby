@@ -54,7 +54,7 @@ export const products: ProductInterface[] = [
   },
   {
     image: productTwo,
-    description: "Description",
+    description: "Fashionnova Cut Out Top",
     price: "14,500",
     colors: [],
   },
@@ -82,8 +82,8 @@ export const products: ProductInterface[] = [
   },
   {
     image: productFour,
-    description: "Description",
-    price: "21,000",
+    description: "Fashionova Flare Pant",
+    price: "45,000",
     colors: [
       {
         color: brown,
@@ -99,8 +99,8 @@ export const products: ProductInterface[] = [
   },
   {
     image: productFive,
-    description: "Description",
-    price: "32,000",
+    description: "Fashionnova Fringed Satin Midi Dress",
+    price: "76,000",
     colors: [
       {
         color: faded,
