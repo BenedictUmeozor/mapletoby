@@ -4,6 +4,7 @@ import InstagramIcon from "@/assets/icons/Instagram";
 import FacebookIcon from "@/assets/icons/Facebook";
 import TwitterIcon from "@/assets/icons/Twitter";
 import { Kantumruy_Pro } from "next/font/google";
+import StoreBanner from "../banner-two/StoreBanner";
 
 interface LinkInterface {
   title: string;
@@ -82,31 +83,7 @@ const Footer = () => {
             ))}
           </div>
         </Container>
-        <div className="absolute left-0 w-full max-md:top-[95%] md:-bottom-8">
-          <Container className=" flex items-center max-md:mt-5 gap-4 footer">
-            <div className="flex-1 flex items-center justify-start">
-              <p className=" text-custom_blue-30 text-[3.5rem] max-md:text-[1.125rem]">
-                EXCLUSIVE
-              </p>
-            </div>
-            <div className="flex-1 flex items-center justify-center">
-              <div className="h-4 w-4 max-md:h-2 max-md:w-2 bg-primary-50 rounded-full"></div>
-            </div>
-            <div className="flex-1">
-              <p className=" text-custom_blue-30 text-[3.5rem] max-md:text-[1.125rem]">
-                VOGUE
-              </p>
-            </div>
-            <div className="flex-1 flex items-center justify-center">
-              <div className="h-4 w-4 max-md:h-2 max-md:w-2 bg-primary-50 rounded-full"></div>
-            </div>
-            <div className="flex items-center justify-center flex-1">
-              <p className="text-custom_blue-30 text-[3.5rem] max-md:text-[1.125rem]">
-                EXTRA-CHIC
-              </p>
-            </div>
-          </Container>
-        </div>
+        <StoreBanner className="absolute left-0 w-full max-md:top-[95%] md:-bottom-8" />
       </div>
       <div className="border-t border-dashed border-custom_blue-40">
         <Container className="py-6 flex items-center justify-between">

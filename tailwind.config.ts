@@ -9,12 +9,18 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        critical_red: {
+          50: "#FAC7C3",
+          90: "#ED4337",
+        },
         custom_blue: {
+          10: "#F5F6FB",
           20: "#EBEEF6",
           30: "#D8DDED",
           40: "#C4CCE5",
+          60: "#9DAAD3",
           80: "#6A77A0",
-          90: "#505D86"
+          90: "#505D86",
         },
         neutral: {
           10: "#F8FAFB",

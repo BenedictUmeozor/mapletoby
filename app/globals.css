@@ -69,17 +69,20 @@ img {
 }
 
 .category-text,
-button, .footer p {
+button,
+.footer p {
   white-space: nowrap;
 }
 
 .category-bar::-webkit-scrollbar,
-.navbar section::-webkit-scrollbar {
+.navbar section::-webkit-scrollbar,
+.no-scrollbar::-webkit-scrollbar {
   display: none;
 }
 
 .category-bar,
-.navbar section {
+.navbar section,
+.no-scrollbar {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
@@ -135,6 +138,19 @@ button, .footer p {
 }
 
 @keyframes fadeDot {
-  0%, 100% { opacity: 0; }
-  50% { opacity: 1; }
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.product-link img {
+  transition: transform 0.5s ease-in-out;
+}
+
+.product-link:hover img {
+  transform: scale(1.05);
 }
