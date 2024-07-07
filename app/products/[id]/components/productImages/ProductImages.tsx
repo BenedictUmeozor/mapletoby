@@ -106,7 +106,7 @@ const ProductImages = () => {
 
       <div className="max-md:hidden flex mb-8 items-center gap-8 h-[35.15rem]">
         <div className="flex flex-col items-center gap-8 h-full overflow-y-auto no-scrollbar flex-1">
-          <div className="flex-1 mx-auto cursor-pointer border border-primary-100">
+          <div className="flex-1 mx-auto cursor-pointer border border-primary-100 rounded-sm overflow-hidden">
             <Image
               src={product16}
               alt="product"
@@ -115,7 +115,7 @@ const ProductImages = () => {
               className="w-full h-full"
             />
           </div>
-          <div className="flex-1 mx-auto cursor-pointer border border-transparent hover:border-primary-100">
+          <div className="flex-1 mx-auto cursor-pointer border border-transparent hover:border-primary-100 rounded-sm overflow-hidden">
             <Image
               src={product17}
               alt="product"
@@ -124,7 +124,7 @@ const ProductImages = () => {
               className="w-full h-full"
             />
           </div>
-          <div className="flex-1 mx-auto cursor-pointer border border-transparent hover:border-primary-100">
+          <div className="flex-1 mx-auto cursor-pointer border border-transparent hover:border-primary-100 rounded-sm overflow-hidden">
             <Image
               src={product18}
               alt="product"
