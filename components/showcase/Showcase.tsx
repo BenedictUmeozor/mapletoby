@@ -1,7 +1,6 @@
 "use client";
 
 import Container from "../container/Container";
-import { v4 as uuidV4 } from "uuid";
 import { products } from "./productData";
 import Product from "../product/Product";
 import MobileFilter from "./MobileFilter";

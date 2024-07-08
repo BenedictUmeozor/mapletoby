@@ -1,15 +1,37 @@
+"use client";
+
 import Image from "next/image";
 import { ProductInterface, white } from "../showcase/productData";
 import { v4 as uuidV4 } from "uuid";
 import CartAction from "./CartAction";
 import QuickAdd from "../ui-utils/QuickAdd";
 import { formatNumberWithCommas } from "@/utils/functions";
+import { useEffect, useState } from "react";
 
 type Props = {
   product: ProductInterface;
 };
 
 const Product = ({ product }: Props) => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  const formatDescription = (description: string) => {
+    if (isMobile) {
+      return description.length > 18
+        ? description.substring(0, 18) + "..."
+        : description;
+    } else {
+      return description.length > 22
+        ? description.substring(0, 22) + "..."
+        : description;
+    }
+  };
+
+  useEffect(() => {
+    if (window.innerWidth < 768) {
+      setIsMobile(true);
+    }
+  }, []);
   return (
     <div className="max-w-[220px] mx-auto max-md:max-w-[170px] relative">
       <div className="product-link block h-72 rounded-sm overflow-hidden max-md:h-64 cursor-pointer relative">
@@ -25,9 +47,7 @@ const Product = ({ product }: Props) => {
       <CartAction />
       <div className="mt-3">
         <p className="heading-6-lg text-shade-120 font-semibold block hover:underline">
-          {product.description.length > 22
-            ? product.description.substring(0, 22) + "..."
-            : product.description}
+          {formatDescription(product.description)}
         </p>
         <p className=" text-primary-100 mt-1 mb-3 font-bold">
           ₦{formatNumberWithCommas(product.price)}
