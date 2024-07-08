@@ -60,7 +60,7 @@ const Page = () => {
           </Container>
         </div>
         <div className="bg-white md:hidden my-4">
-          <Container className="px-6">
+          <Container className="px-6 py-4">
             <p className="heading-6-lg text-neutral-140 my-2">
               Order #MPA67872
             </p>
@@ -75,7 +75,7 @@ const Page = () => {
         <div className="mt-4 bg-white py-6">
           <Container className="px-6">
             <h4 className="heading-4-lg mb-1 font-semibold">Order Details</h4>
-            <div className="mt-4 grid grid-cols-4 max-md:grid-cols-2">
+            <div className="mt-4 grid grid-cols-4 max-md:grid-cols-2" style={{rowGap: "0.75rem"}}>
               <div>
                 <h6 className="heading-6-sm text-shade-120 font-semibold mb-1">
                   Shipping Address

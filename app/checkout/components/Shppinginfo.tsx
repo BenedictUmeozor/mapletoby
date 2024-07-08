@@ -5,7 +5,7 @@ import Container from "@/components/container/Container";
 import { useBillingContext } from "@/providers/billing-provider/BillingProvider";
 import { memo, useState } from "react";
 
-const statesInNigeria = [
+export const statesInNigeria = [
   "Abia",
   "Adamawa",
   "Akwa Ibom",
@@ -47,7 +47,7 @@ const statesInNigeria = [
 
 const Shppinginfo = memo(() => {
   const { updateInfo, billingInfo } = useBillingContext();
-  const [state, setState] = useState("");
+  const [state, setState] = useState(billingInfo.state);
   const [show, setShow] = useState(false);
 
   return (
@@ -61,6 +61,7 @@ const Shppinginfo = memo(() => {
               required
               placeholder="First Name"
               className="px-4 heading-6-lg text-neutral-120 border border-neutral-50 rounded focus:outline-none h-full w-full"
+              defaultValue={billingInfo.firstName}
               onChange={(e) =>
                 updateInfo({ ...billingInfo, firstName: e.target.value })
               }
@@ -72,6 +73,7 @@ const Shppinginfo = memo(() => {
               required
               placeholder="Last Name"
               className="px-4 heading-6-lg text-neutral-120 border border-neutral-50 rounded focus:outline-none h-full w-full"
+              defaultValue={billingInfo.lastName}
               onChange={(e) =>
                 updateInfo({ ...billingInfo, lastName: e.target.value })
               }
@@ -86,6 +88,7 @@ const Shppinginfo = memo(() => {
             required
             placeholder="Full Address (including city or town)"
             className="px-4 heading-6-lg text-neutral-120 border border-neutral-50 rounded focus:outline-none h-full w-full"
+            defaultValue={billingInfo.address}
             onChange={(e) =>
               updateInfo({ ...billingInfo, address: e.target.value })
             }
@@ -99,6 +102,7 @@ const Shppinginfo = memo(() => {
             required
             placeholder="City"
             className="px-4 heading-6-lg text-neutral-120 border border-neutral-50 rounded focus:outline-none h-full w-full"
+            defaultValue={billingInfo.city}
             onChange={(e) =>
               updateInfo({ ...billingInfo, city: e.target.value })
             }
@@ -147,6 +151,7 @@ const Shppinginfo = memo(() => {
             required
             placeholder="Phone Number"
             className="px-4 heading-6-lg text-neutral-120 border border-neutral-50 rounded focus:outline-none h-full w-full"
+            defaultValue={billingInfo.phoneNumber}
             onChange={(e) =>
               updateInfo({ ...billingInfo, phoneNumber: e.target.value })
             }

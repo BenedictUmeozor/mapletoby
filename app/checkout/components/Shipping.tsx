@@ -40,12 +40,19 @@ const Shipping = () => {
       <h4 className="heading-4-sm font-bold">
         Shipping Method (Same-day delivery available)
       </h4>
-      <div className="mt-4 rounded-md overflow-hidden border border-shade-40">
+      <div
+        className={"mt-4 rounded-md overflow-hidden border border-shade-40 "}
+      >
         {options.map((option) => (
           <label
             htmlFor={option.label}
             key={option.label}
-            className="shipping-option flex items-start justify-between py-4 border-b px-4 border-shade-40 cursor-pointer"
+            className={
+              "shipping-option border-t border-l border-r flex items-start justify-between py-4 border-b px-4 border-shade-40 cursor-pointer " +
+              (billingInfo.shippingMethod.label === option.label
+                ? "bg-[#F6F6F6]"
+                : "")
+            }
           >
             <div className="flex items-center gap-2">
               <label className="custom-radio">

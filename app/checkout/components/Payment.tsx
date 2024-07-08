@@ -21,13 +21,16 @@ const Payment = () => {
         <div className="mt-4">
           <label
             htmlFor="paystack"
-            className="paystack py-4 flex items-center justify-between border border-shade-40 px-4"
+            className={
+              "paystack py-4 flex items-center justify-between border  px-4 " +
+              (billingInfo.paymentMethod === "Paystack" ? "bg-[#F6F6F6] border-[#1b1b1b] " : "border-shade-40")
+            }
           >
             <div className="flex items-center gap-2">
               <label className="custom-radio">
                 <input
                   type="radio"
-                  name="shipping"
+                  name="payment"
                   id="paystack"
                   defaultChecked
                   onChange={(e) =>
@@ -55,9 +58,9 @@ const Payment = () => {
               />
             </div>
           </label>
-          <div className="h-60 flex flex-col items-center justify-center border-l border-r border-shade-40 gap-4">
+          <div className="h-60 flex flex-col items-center justify-center border-l border-r border-shade-40 gap-4 bg-[#F6F6F6]">
             <CheckoutIcon />
-            <p className="text-center heading-6-lg">
+            <p className="text-center heading-6-lg max-w-[70%]">
               After clicking “Pay Now”, you will be redirected to{" "}
               {billingInfo.paymentMethod ?? "Paystack"} to complete your payment
               secruely
@@ -65,14 +68,15 @@ const Payment = () => {
           </div>
           <label
             htmlFor="flutterwave"
-            className="flutterwave py-4 flex items-center justify-between border border-shade-40 px-4"
+            className={"flutterwave py-4 flex items-center justify-between border border-shade-40 px-4 " +
+              (billingInfo.paymentMethod === "Flutterwave" ? "bg-[#F6F6F6] border-[#1b1b1b] " : "")}
           >
             <div className="flex items-center gap-2">
               <label className="custom-radio">
                 <input
                   type="radio"
                   id="flutterwave"
-                  name="shipping"
+                  name="payment"
                   onChange={(e) =>
                     e.target.checked && updatePaymentMethod("Flutterwave")
                   }
