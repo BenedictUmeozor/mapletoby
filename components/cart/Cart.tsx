@@ -6,15 +6,25 @@ import WalletIcon from "@/assets/icons/WalletIcon";
 import { useCartContext } from "@/providers/cart-provider/CartProvider";
 import { createPortal } from "react-dom";
 import { formatNumberWithCommas } from "@/utils/functions";
+import { useRouter } from "next/navigation";
 
 const Cart = () => {
   const { cartIsOpen, closeCart, cart, total } = useCartContext();
+  const router = useRouter();
+
+  const routeToCheckout = () => {
+    router.push("/checkout");
+    closeCart();
+  };
 
   return (
     <>
       {cartIsOpen &&
         createPortal(
-          <div className="overlay max-md:hidden"></div>,
+          <div
+            className="overlay max-md:hidden"
+            onClick={() => closeCart()}
+          ></div>,
           document.body
         )}
       <div
@@ -52,7 +62,10 @@ const Cart = () => {
             </p>
           </div>
           <div className="py-6 px-4">
-            <button className="w-full bg-shade-120 text-white h-12 rounded flex items-center justify-center gap-2">
+            <button
+              className="w-full bg-shade-120 text-white h-12 rounded flex items-center justify-center gap-2"
+              onClick={routeToCheckout}
+            >
               <WalletIcon />
               Checkout
             </button>
