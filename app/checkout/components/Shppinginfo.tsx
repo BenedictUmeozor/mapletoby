@@ -112,7 +112,12 @@ const Shppinginfo = memo(() => {
             <span className="text-neutral-100">
               {state.length ? state : "State"}
             </span>
-            <ChevronDownIcon className={"w-5 transition-all duration-200 ease-linear " + (show ? "rotate" : "")} />
+            <ChevronDownIcon
+              className={
+                "w-5 transition-all duration-200 ease-linear " +
+                (show ? "rotate" : "")
+              }
+            />
           </div>
           {show && (
             <div className="absolute top-[105%] left-0 w-full h-64 shadow-md rounded-md z-20 overflow-y-auto no-scrollbar bg-white">
@@ -124,7 +129,7 @@ const Shppinginfo = memo(() => {
                     onClick={() => {
                       setState(state);
                       updateInfo({ ...billingInfo, state });
-                      setShow(false)
+                      setShow(false);
                     }}
                   >
                     {state}
@@ -133,15 +138,6 @@ const Shppinginfo = memo(() => {
               </ul>
             </div>
           )}
-          {/* <input
-            type="text"
-            required
-            placeholder="State"
-            className="px-4 heading-6-lg text-neutral-120 border border-neutral-50 rounded focus:outline-none h-full w-full"
-            onChange={(e) =>
-              updateInfo({ ...billingInfo, state: e.target.value })
-            }
-          /> */}
         </div>
       </div>
       <div className="my-4">
@@ -157,10 +153,11 @@ const Shppinginfo = memo(() => {
           />
         </div>
       </div>
-      <div className="flex items-center gap-2 my-4">
-        <input type="checkbox" name="" id="" />
-        <p className="heading-6-sm">Save this information for next time</p>
-      </div>
+      <label className="custom-checkbox heading-6-sm mt-2">
+        Save this information for next time
+        <input type="checkbox" />
+        <span className="checkmark"></span>
+      </label>
     </Container>
   );
 });

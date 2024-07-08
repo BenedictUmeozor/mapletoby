@@ -48,14 +48,18 @@ const Shipping = () => {
             className="shipping-option flex items-start justify-between py-4 border-b px-4 border-shade-40 cursor-pointer"
           >
             <div className="flex items-center gap-2">
-              <input
-                type="radio"
-                id={option.label}
-                name="shipping"
-                className="cursor-pointer"
-                defaultChecked={option.price === 15000}
-                onChange={(e) => e.target.checked && updateBillingInfo(option)}
-              />
+              <label className="custom-radio">
+                <input
+                  type="radio"
+                  name="shipping"
+                  id={option.label}
+                  defaultChecked={option.price === 15000}
+                  onChange={(e) =>
+                    e.target.checked && updateBillingInfo(option)
+                  }
+                />
+                <span className="radio-button"></span>
+              </label>
               <div className="flex flex-col justify-between">
                 <span className="heading-6-lg font-bold">{option.label}</span>
                 <span className="heading-6-lg text-shade-40">

@@ -24,15 +24,18 @@ const Payment = () => {
             className="paystack py-4 flex items-center justify-between border border-shade-40 px-4"
           >
             <div className="flex items-center gap-2">
-              <input
-                type="radio"
-                name="payment"
-                id="paystack"
-                defaultChecked
-                onChange={(e) =>
-                  e.target.checked && updatePaymentMethod("Paystack")
-                }
-              />
+              <label className="custom-radio">
+                <input
+                  type="radio"
+                  name="shipping"
+                  id="paystack"
+                  defaultChecked
+                  onChange={(e) =>
+                    e.target.checked && updatePaymentMethod("Paystack")
+                  }
+                />
+                <span className="radio-button"></span>
+              </label>
               <span className="heading-6-lg font-semibold">Paystack</span>
             </div>
             <div className="flex items-center gap-2">
@@ -65,14 +68,17 @@ const Payment = () => {
             className="flutterwave py-4 flex items-center justify-between border border-shade-40 px-4"
           >
             <div className="flex items-center gap-2">
-              <input
-                type="radio"
-                name="payment"
-                id="flutterwave"
-                onChange={(e) =>
-                  e.target.checked && updatePaymentMethod("Flutterwave")
-                }
-              />
+              <label className="custom-radio">
+                <input
+                  type="radio"
+                  id="flutterwave"
+                  name="shipping"
+                  onChange={(e) =>
+                    e.target.checked && updatePaymentMethod("Flutterwave")
+                  }
+                />
+                <span className="radio-button"></span>
+              </label>
               <span className="heading-6-lg font-semibold">Flutterwave</span>
             </div>
             <div className="flex items-center gap-2">

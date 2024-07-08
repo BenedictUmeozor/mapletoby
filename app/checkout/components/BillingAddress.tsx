@@ -12,7 +12,10 @@ const BillingAddress = () => {
             htmlFor="same"
             className="flex items-center gap-2 round-top border border-shade-40 p-4"
           >
-            <input type="radio" name="billing" defaultChecked id="same" />
+            <label className="custom-radio">
+              <input type="radio" name="billing" id="same" defaultChecked />
+              <span className="radio-button"></span>
+            </label>
             <span className="heading-6-lg font-semibold">
               Same as shipping address
             </span>
@@ -21,7 +24,10 @@ const BillingAddress = () => {
             htmlFor="different"
             className="flex items-center gap-2 round-bottom border-b border-l border-r border-shade-40 p-4"
           >
-            <input type="radio" name="billing" id="different" />
+            <label className="custom-radio">
+              <input type="radio" name="billing" id="different" />
+              <span className="radio-button"></span>
+            </label>
             <span className="heading-6-lg font-semibold">
               Use a different address
             </span>

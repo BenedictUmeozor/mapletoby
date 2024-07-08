@@ -159,10 +159,11 @@ const Page = () => {
                   }
                 />
               </div>
-              <div className="flex items-center gap-2 my-4">
-                <input type="checkbox" name="" id="" />
-                <p className="heading-6-sm">Email me with news and offers</p>
-              </div>
+              <label className="custom-checkbox heading-6-sm mt-2">
+                Email me with news and offers
+                <input type="checkbox" />
+                <span className="checkmark"></span>
+              </label>
             </Container>
           </div>
           <div className="bg-white mt-4 py-4">
