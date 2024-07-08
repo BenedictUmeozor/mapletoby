@@ -33,6 +33,7 @@ type Context = {
   increaseQuantity: (c: CartItem) => void;
   decreaseQuantity: (c: CartItem) => void;
   total: number;
+  clearCart: () => void
 };
 
 const CartContext = createContext<Context>({
@@ -45,6 +46,7 @@ const CartContext = createContext<Context>({
   increaseQuantity: () => {},
   decreaseQuantity: () => {},
   total: 0,
+  clearCart: () => {}
 });
 
 export const useCartContext = () => {
@@ -122,6 +124,8 @@ const CartProvider = ({ children }: Props) => {
     [cart]
   );
 
+  const clearCart = useCallback(() => setCart([]), [])
+
   useEffect(() => {
     if (cartIsOpen) {
       document.body.classList.add("open");
@@ -154,6 +158,7 @@ const CartProvider = ({ children }: Props) => {
         decreaseQuantity,
         increaseQuantity,
         total,
+        clearCart
       }}
     >
       {children}

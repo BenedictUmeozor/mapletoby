@@ -33,7 +33,7 @@ const CartItem = memo(({ item }: Props) => {
       <div className="flex-1 flex items-center h-full px-4">
         <div className="flex-1 flex flex-col gap-2 items-start">
           <div className="md:flex items-center gap-2">
-            <p className="heading-6-lg font-bold ">{item.title}</p>
+            <p className="heading-6-lg font-bold max-md:heading-6-sm">{item.title}</p>
             <p className=" text-neutral-110 heading-6-lg">
               ({item.sizes.join(",")})
             </p>
