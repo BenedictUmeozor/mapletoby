@@ -55,7 +55,13 @@ export const products: ProductInterface[] = [
     image: productTwo,
     description: "Fashionnova Cut Out Top",
     price: 14500,
-    colors: [],
+    colors: [
+      {
+        color: black,
+        highlighted: true,
+        colorHighlightedIsWhite: false,
+      },
+    ],
   },
   {
     id: uuidV4(),
