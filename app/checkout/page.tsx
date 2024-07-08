@@ -65,14 +65,6 @@ const Page = () => {
   };
 
   useEffect(() => {
-    if (showModal) {
-      document.body.classList.add("open");
-    } else {
-      document.body.classList.remove("open");
-    }
-  }, [showModal]);
-
-  useEffect(() => {
     if (cart.length === 0) {
       router.push("/");
     }

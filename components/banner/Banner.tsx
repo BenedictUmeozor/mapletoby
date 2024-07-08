@@ -17,7 +17,7 @@ const Banner = () => {
         SAME DAY DELIVERY
       </p>
       <Divider />
-      <p className=" text-custom_blue-80 text-[0.85rem] max-md:text-xs font-semibold">
+      <p className=" text-custom_blue-80 text-xs font-semibold">
         ABUJA, LAGOS, PH
       </p>
     </div>

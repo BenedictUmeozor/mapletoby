@@ -31,7 +31,7 @@ const CategoriesBar = () => {
           <p
             key={category}
             className={
-              "category-text py-4 cursor-pointer  uppercase heading-6-sm hover:text-primary-100 transition-all delay-200 ease-linear font-semibold " +
+              "category-text py-4 cursor-pointer  uppercase text-[0.875rem] hover:text-primary-100 transition-all delay-200 ease-linear font-semibold " +
               (index === 0 ? "text-primary-100" : "text-neutral-110")
             }
           >
