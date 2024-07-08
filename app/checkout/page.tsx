@@ -26,6 +26,7 @@ const Page = () => {
   const [showModal, setShowModal] = useState(false);
   const [showLoading, setShowLoading] = useState(false);
   const [showSuccess, setShowSuccess] = useState(false);
+  const [mounted, setMounted] = useState(false);
   const [text, setText] = useState("Loading");
   const router = useRouter();
 
@@ -65,6 +66,18 @@ const Page = () => {
   };
 
   useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  useEffect(() => {
+    if (showModal) {
+      document.body.classList.add("open");
+    } else {
+      document.body.classList.remove("open");
+    }
+  }, [showModal]);
+
+  useEffect(() => {
     if (cart.length === 0) {
       router.push("/");
     }
@@ -72,43 +85,44 @@ const Page = () => {
 
   return (
     <>
-      {createPortal(
-        <>
-          {showModal && (
-            <div
-              className="fixed top-0 left-0 h-screen w-full bg-white z-50 flex items-center justify-center"
-              onClick={removeSuccessModal}
-            >
-              {showLoading && <LoadingIndicator text={text} />}
-              {showSuccess && (
-                <div
-                  className="mx-auto w-[80%] max-w-[500px]"
-                  onClick={removeSuccessModal}
-                >
-                  <div className="shadow-md rounded mb-4 h-72 flex flex-col items-center justify-center gap-2">
-                    <Verified />
-                    <p>Payment Successful</p>
-                    <p className="text-neutral-120">
-                      You paid ₦
-                      {formatNumberWithCommas(
-                        total + billingInfo.shippingMethod.price
-                      )}{" "}
-                      to MAPLETOBY
+      {mounted &&
+        createPortal(
+          <>
+            {showModal && (
+              <div
+                className="fixed top-0 left-0 h-screen w-full bg-white z-50 flex items-center justify-center"
+                onClick={removeSuccessModal}
+              >
+                {showLoading && <LoadingIndicator text={text} />}
+                {showSuccess && (
+                  <div
+                    className="mx-auto w-[80%] max-w-[500px]"
+                    onClick={removeSuccessModal}
+                  >
+                    <div className="shadow-md rounded mb-4 h-72 flex flex-col items-center justify-center gap-2">
+                      <Verified />
+                      <p>Payment Successful</p>
+                      <p className="text-neutral-120">
+                        You paid ₦
+                        {formatNumberWithCommas(
+                          total + billingInfo.shippingMethod.price
+                        )}{" "}
+                        to MAPLETOBY
+                      </p>
+                    </div>
+                    <p className="flex items-center justify-center gap-2 heading-6-sm">
+                      <Lock /> secured by{" "}
+                      <span className="text-[#011B33]">
+                        {billingInfo.paymentMethod}
+                      </span>
                     </p>
                   </div>
-                  <p className="flex items-center justify-center gap-2 heading-6-sm">
-                    <Lock /> secured by{" "}
-                    <span className="text-[#011B33]">
-                      {billingInfo.paymentMethod}
-                    </span>
-                  </p>
-                </div>
-              )}
-            </div>
-          )}
-        </>,
-        document.body
-      )}
+                )}
+              </div>
+            )}
+          </>,
+          document.body
+        )}
       <section className="grid grid-cols-12 max-md:grid-cols-1 bg-[#F5F5F5] h-full w-full md:h-screen">
         <form
           onSubmit={onSubmit}
