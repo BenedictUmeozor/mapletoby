@@ -201,7 +201,9 @@ const Page = () => {
               </div>
               <div className="flex items-center justify-between font-semibold heading-6-lg mb-1">
                 <span>Shipping</span>
-                <span>₦{billingInfo.shippingMethod.price}</span>
+                <span>
+                  ₦{formatNumberWithCommas(billingInfo.shippingMethod.price)}
+                </span>
               </div>
               <div className="flex items-center justify-between font-bold heading-5-lg">
                 <span>Total</span>
