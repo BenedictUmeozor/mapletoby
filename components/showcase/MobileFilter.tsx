@@ -37,20 +37,20 @@ const MobileFilter = ({
           className="flex-1 text-neutral-110 heading-6-sm p-1 px-2 border border-neutral-40 rounded cursor-pointer transition-all duration-300 hover:opacity-45"
           onClick={hideFilters}
         >
-          Remove Filters
+          Remove 
         </button>
       )}
       <button
         className="flex-1 flex items-center justify-center text-neutral-110 heading-6-sm p-1 px-2 border border-neutral-40 rounded cursor-pointer transition-all duration-300 hover:opacity-45"
         onClick={sortFromLowToHigh}
       >
-        Price: Low to High
+        Price: L → H
       </button>
       <button
         className="flex-1 flex items-center justify-center text-neutral-110 heading-6-sm p-1 px-2 border border-neutral-40 rounded cursor-pointer transition-all duration-300 hover:opacity-45"
         onClick={sortFromHighToLow}
       >
-        Price: High to Low
+        Price: H → L
       </button>
     </div>
   );
