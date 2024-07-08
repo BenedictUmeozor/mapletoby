@@ -24,7 +24,7 @@ const QuickAdd = memo(({ product }: { product: ProductInterface }) => {
   };
 
   return (
-    <div className="quick-add w-full bg-custom_blue-20 py-2">
+    <div className="quick-add w-full bg-neutral-10 py-2">
       <h4 className="caption font-bold text-primary-80 text-center mb-2">
         QUICK ADD
       </h4>

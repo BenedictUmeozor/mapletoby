@@ -21,8 +21,8 @@ const Product = ({ product }: Props) => {
         ? description.substring(0, 18) + "..."
         : description;
     } else {
-      return description.length > 22
-        ? description.substring(0, 22) + "..."
+      return description.length > 25
+        ? description.substring(0, 25) + "..."
         : description;
     }
   };
