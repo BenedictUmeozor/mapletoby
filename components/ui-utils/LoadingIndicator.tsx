@@ -1,6 +1,6 @@
 const LoadingIndicator = ({ text = "Loading" }: { text?: string }) => {
   return (
-    <div className="flex items-center justify-center gap-2 mb-8">
+    <div className="flex items-center justify-center gap-2 my-16">
       <span className="heading-6-lg font-semibold">{text}</span>
       <div className="dots">
         <span className="dot"></span>

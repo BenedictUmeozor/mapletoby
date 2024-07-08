@@ -1,11 +1,54 @@
 "use client";
 
+import ChevronDownIcon from "@/assets/icons/ChevronDown";
 import Container from "@/components/container/Container";
 import { useBillingContext } from "@/providers/billing-provider/BillingProvider";
-import { memo } from "react";
+import { memo, useState } from "react";
+
+const statesInNigeria = [
+  "Abia",
+  "Adamawa",
+  "Akwa Ibom",
+  "Anambra",
+  "Bauchi",
+  "Bayelsa",
+  "Benue",
+  "Borno",
+  "Cross River",
+  "Delta",
+  "Ebonyi",
+  "Edo",
+  "Ekiti",
+  "Enugu",
+  "Gombe",
+  "Imo",
+  "Jigawa",
+  "Kaduna",
+  "Kano",
+  "Katsina",
+  "Kebbi",
+  "Kogi",
+  "Kwara",
+  "Lagos",
+  "Nasarawa",
+  "Niger",
+  "Ogun",
+  "Ondo",
+  "Osun",
+  "Oyo",
+  "Plateau",
+  "Rivers",
+  "Sokoto",
+  "Taraba",
+  "Yobe",
+  "Zamfara",
+  "FCT (Federal Capital Territory)",
+];
 
 const Shppinginfo = memo(() => {
   const { updateInfo, billingInfo } = useBillingContext();
+  const [state, setState] = useState("");
+  const [show, setShow] = useState(false);
 
   return (
     <Container className="px-6">
@@ -61,8 +104,36 @@ const Shppinginfo = memo(() => {
             }
           />
         </div>
-        <div className="h-14 flex-1">
-          <input
+        <div className="h-14 flex-1 relative">
+          <div
+            className="cursor-pointer flex items-center border border-neutral-50 justify-between px-4 text-neutral-140 rounded h-full"
+            onClick={() => setShow((prev) => !prev)}
+          >
+            <span className="text-neutral-100">
+              {state.length ? state : "State"}
+            </span>
+            <ChevronDownIcon className={"w-5 transition-all duration-200 ease-linear " + (show ? "rotate" : "")} />
+          </div>
+          {show && (
+            <div className="absolute top-[105%] left-0 w-full h-64 shadow-md rounded-md z-20 overflow-y-auto no-scrollbar bg-white">
+              <ul>
+                {statesInNigeria.map((state) => (
+                  <li
+                    key={state}
+                    className="cursor-pointer px-4 py-2 hover:bg-neutral-30 border-b border-neutral-10"
+                    onClick={() => {
+                      setState(state);
+                      updateInfo({ ...billingInfo, state });
+                      setShow(false)
+                    }}
+                  >
+                    {state}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+          {/* <input
             type="text"
             required
             placeholder="State"
@@ -70,7 +141,7 @@ const Shppinginfo = memo(() => {
             onChange={(e) =>
               updateInfo({ ...billingInfo, state: e.target.value })
             }
-          />
+          /> */}
         </div>
       </div>
       <div className="my-4">
