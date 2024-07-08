@@ -35,67 +35,15 @@ const links: LinkInterface[] = [
 const Footer = () => {
   return (
     <footer className=" bg-neutral-30 pt-4 ">
-      <div className="mt-8 pt-6 pb-24 border-t border-dashed border-custom_blue-40 overflow-y-hidden relative max-md:pb-10 overflow-x-hidden">
-        <Container className="flex max-md:block items-center gap-20">
-          <div className="flex-1 max-md:mb-8">
-            <Link
-              href="/"
-              className={
-                kantumruy.className +
-                " text-lg block mb-2 text-shade-120 font-bold"
-              }
-            >
-              MAPLETOBY
-            </Link>
-            <p className=" text-neutral-140 heading-6-sm">
-              Join our mailing list to stay up-to-date with product releases.
-            </p>
-            <div className="mt-2 h-10 flex items-center relative">
-              <input
-                type="text"
-                className="h-full w-full px-3 bg-white rounded heading-6-sm border border-custom_blue-20 focus:outline-none pr-16"
-                placeholder="Enter your email address"
-              />
-              <button className="absolute top-1/2 transform -translate-y-1/2 right-[1px] rounded-sm bg-shade-120 text-white h-9 w-14 heading-6-sm">
-                Join
-              </button>
-            </div>
-          </div>
-          <div className="flex-[3] flex items-start max-md:block gap-12">
-            {links.map((link) => (
-              <div key={link.title} className="flex-1 max-md:mb-6">
-                <h5 className="text-shade-120 font-bold heading-6-lg">
-                  {link.title}
-                </h5>
-                <ul className="mt-2">
-                  {link.links.map((link) => (
-                    <li key={link} className="mb-2">
-                      <Link
-                        href="/"
-                        className=" text-custom_blue-90 heading-6-sm"
-                      >
-                        {link}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
-        </Container>
-        <StoreBanner className="absolute left-[-0.125rem] w-full max-md:top-[95%] md:-bottom-8" />
+      <div className="mt-8 pt-36 border-t border-dashed border-custom_blue-40 overflow-y-hidden relative max-md:pb-10 overflow-x-hidden max-md:pt-12">
+        <StoreBanner className="absolute left-[-0.125rem] w-full max-md:top-[50%] md:-bottom-6" />
       </div>
       <div className="border-t border-dashed border-custom_blue-40">
-        <Container className="py-6 flex items-center justify-between">
+        <Container className="py-6">
           <div>
-            <p className="heading-6-lg font-bold">
+            <p className="heading-6-lg font-bold text-center">
               Copyright &copy; {new Date().getFullYear()}
             </p>
-          </div>
-          <div className="flex items-center gap-2">
-            <InstagramIcon className="w-10" />
-            <FacebookIcon className="w-10" />
-            <TwitterIcon className="w-10" />
           </div>
         </Container>
       </div>

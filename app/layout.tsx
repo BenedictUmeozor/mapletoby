@@ -4,6 +4,8 @@ import "./globals.css";
 import Banner from "@/components/banner/Banner";
 import Header from "@/components/header/Header";
 import Footer from "@/components/footer/Footer";
+import CartProvider from "@/providers/cart-provider/CartProvider";
+import Cart from "@/components/cart/Cart";
 
 const nunito_sans = Nunito_Sans({ subsets: ["latin"] });
 
@@ -25,10 +27,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={nunito_sans.className + " text-shade-120"}>
-        <Banner />
-        <Header />
-        {children}
-        <Footer />
+        <CartProvider>
+          <Banner />
+          <Header />
+          <Cart />
+          {children}
+          <Footer />
+        </CartProvider>
       </body>
     </html>
   );

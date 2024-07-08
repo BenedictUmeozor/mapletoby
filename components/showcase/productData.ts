@@ -14,11 +14,13 @@ import productThirteen from "@/assets/images/product13.jpg";
 import productFourteen from "@/assets/images/product14.jpg";
 import productFifteen from "@/assets/images/product15.jpg";
 import { StaticImageData } from "next/image";
+import { v4 as uuidV4 } from "uuid";
 
 export interface ProductInterface {
+  id: string;
   image: StaticImageData;
   description: string;
-  price: string;
+  price: number;
   colors: {
     color: string;
     highlighted: boolean;
@@ -36,9 +38,10 @@ const faded = "#F0EEE2";
 
 export const products: ProductInterface[] = [
   {
+    id: uuidV4(),
     image: productOne,
     description: "Fashionnova Body Con",
-    price: "32,000",
+    price: 32000,
     colors: [
       {
         color: white,
@@ -53,15 +56,17 @@ export const products: ProductInterface[] = [
     ],
   },
   {
+    id: uuidV4(),
     image: productTwo,
     description: "Fashionnova Cut Out Top",
-    price: "14,500",
+    price: 14500,
     colors: [],
   },
   {
+    id: uuidV4(),
     image: productThree,
     description: "Fashionnova Lace Top",
-    price: "39,000",
+    price: 39000,
     colors: [
       {
         color: black,
@@ -81,9 +86,10 @@ export const products: ProductInterface[] = [
     ],
   },
   {
+    id: uuidV4(),
     image: productFour,
     description: "Fashionova Flare Pant",
-    price: "45,000",
+    price: 45000,
     colors: [
       {
         color: brown,
@@ -98,9 +104,10 @@ export const products: ProductInterface[] = [
     ],
   },
   {
+    id: uuidV4(),
     image: productFive,
     description: "Fashionnova Fringed Satin Midi Dress",
-    price: "76,000",
+    price: 76000,
     colors: [
       {
         color: faded,
@@ -110,9 +117,10 @@ export const products: ProductInterface[] = [
     ],
   },
   {
+    id: uuidV4(),
     image: productSix,
     description: "Fashionnova Washed Pant Set",
-    price: "78,000",
+    price: 78000,
     colors: [
       {
         color: brown,
@@ -122,9 +130,10 @@ export const products: ProductInterface[] = [
     ],
   },
   {
+    id: uuidV4(),
     image: productSeven,
     description: "PLT Frill Hem Mini Dress",
-    price: "19,900",
+    price: 19000,
     colors: [
       {
         color: purple,
@@ -134,9 +143,10 @@ export const products: ProductInterface[] = [
     ],
   },
   {
+    id: uuidV4(),
     image: productEight,
     description: "Two Piece Yoga Skirt Set",
-    price: "40,000",
+    price: 40000,
     colors: [
       {
         color: black,
@@ -161,9 +171,10 @@ export const products: ProductInterface[] = [
     ],
   },
   {
+    id: uuidV4(),
     image: productNine,
     description: "Fashionnova Maxi Dress",
-    price: "88,000",
+    price: 88000,
     colors: [
       {
         color: cream,
@@ -173,9 +184,10 @@ export const products: ProductInterface[] = [
     ],
   },
   {
+    id: uuidV4(),
     image: productTen,
     description: "Embellished Heart Cup Mini Dresse",
-    price: "36,000",
+    price: 36000,
     colors: [
       {
         color: pink,
@@ -185,9 +197,10 @@ export const products: ProductInterface[] = [
     ],
   },
   {
+    id: uuidV4(),
     image: productEleven,
     description: "Backless Halter Top",
-    price: "28,000",
+    price: 28000,
     colors: [
       {
         color: black,
@@ -202,9 +215,10 @@ export const products: ProductInterface[] = [
     ],
   },
   {
+    id: uuidV4(),
     image: productTwelve,
     description: "PLT Frill Hem Maxi Dress",
-    price: "29,900",
+    price: 29000,
     colors: [
       {
         color: pink,
@@ -214,9 +228,10 @@ export const products: ProductInterface[] = [
     ],
   },
   {
+    id: uuidV4(),
     image: productThirteen,
     description: "Fashionnova Linen Pant Set",
-    price: "68,000",
+    price: 68000,
     colors: [
       {
         color: faded,
@@ -226,9 +241,10 @@ export const products: ProductInterface[] = [
     ],
   },
   {
+    id: uuidV4(),
     image: productFourteen,
     description: "Fashionnova Snake Print Pant Se",
-    price: "69,000",
+    price: 69000,
     colors: [
       {
         color: black,
@@ -238,9 +254,10 @@ export const products: ProductInterface[] = [
     ],
   },
   {
+    id: uuidV4(),
     image: productFifteen,
     description: "Oversized Hoodie",
-    price: "32,000",
+    price: 32000,
     colors: [
       {
         color: faded,

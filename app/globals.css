@@ -79,7 +79,6 @@ button,
 .no-scrollbar::-webkit-scrollbar {
   display: none;
 }
-
 body.open {
   height: 100vh;
   height: 100svh;
@@ -159,4 +158,30 @@ body.open {
 
 .product-link:hover img {
   transform: scale(1.05);
+}
+
+.cart {
+  height: 100vh;
+  height: 100svh;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  transition: all 0.5s ease-in-out;
+}
+
+.cart.open {
+  right: 0;
+}
+
+.quick-add {
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.product-link:hover .quick-add {
+  bottom: 0;
 }

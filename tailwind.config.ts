@@ -35,6 +35,7 @@ const config: Config = {
         },
         primary: {
           50: "#FCDDEE",
+          80: "#F575BD",
           100: "#D83992",
         },
         shade: {

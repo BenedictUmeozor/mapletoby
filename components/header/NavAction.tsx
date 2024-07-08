@@ -27,7 +27,7 @@ const NavAction = () => {
 
   return (
     <>
-      <div className="cursor-pointer md:hidden" onClick={openNav}>
+      <div className="cursor-pointer absolute top-1/2 transform -translate-y-1/2 left-[4%] md:hidden" onClick={openNav}>
         <MenuIcon className="w-10" />
       </div>
       {mounted &&
