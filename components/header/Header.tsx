@@ -19,7 +19,7 @@ const Header = () => {
         <NavAction />
         <Link
           href="/"
-          className={kantumruy.className + " heading-2-sm font-extrabold"}
+          className={kantumruy.className + " text-base font-extrabold"}
         >
           MAPLETOBY
         </Link>

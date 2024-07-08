@@ -146,7 +146,7 @@ const Page = () => {
                   clearCart();
                   router.push("/");
                 }}
-                className="rounded bg-shade-120 text-white heading-6-lg text-center font-semibold py-2 w-full"
+                className="rounded hover:bg-neutral-50 bg-shade-120 text-white heading-6-lg text-center font-semibold py-2 w-full"
               >
                 Continue Shopping
               </button>

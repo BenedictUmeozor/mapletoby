@@ -41,7 +41,7 @@ const CartItem = memo(({ item }: Props) => {
           <div className="flex max-md:flex-col items-center gap-8 max-md:gap-2 max-md:items-start">
             <div className=" w-28 flex items-center border border-neutral-30 rounded p-1 max-md:order-2">
               <div
-                className="flex flex-1 items-center justify-center h-6 w-6 rounded-sm bg-neutral-40 cursor-pointer"
+                className="flex hover:opacity-45 flex-1 items-center justify-center h-6 w-6 rounded-sm bg-neutral-40 cursor-pointer"
                 onClick={() => decreaseQuantity(item)}
               >
                 <MinusIcon />
@@ -50,7 +50,7 @@ const CartItem = memo(({ item }: Props) => {
                 {item.quantity}
               </div>
               <div
-                className="flex flex-1 items-center justify-center h-6 w-6 rounded-sm bg-neutral-40 cursor-pointer"
+                className="flex hover:opacity-45 flex-1 items-center justify-center h-6 w-6 rounded-sm bg-neutral-40 cursor-pointer"
                 onClick={() => increaseQuantity(item)}
               >
                 <PlusIcon />

@@ -96,7 +96,7 @@ const Page = () => {
                 {showLoading && <LoadingIndicator text={text} />}
                 {showSuccess && (
                   <div
-                    className="mx-auto w-[80%] max-w-[500px]"
+                    className="mx-auto cursor-pointer w-[80%] max-w-[500px]"
                     onClick={removeSuccessModal}
                   >
                     <div className="shadow-md rounded mb-4 h-72 flex flex-col items-center justify-center gap-2">
@@ -181,7 +181,7 @@ const Page = () => {
           </div>
           <div className="my-8 max-md:hidden">
             <Container>
-              <button className="rounded bg-shade-120 text-white heading-6-lg text-center font-semibold py-2 w-full">
+              <button className="rounded hover:bg-neutral-50 bg-shade-120 text-white heading-6-lg text-center font-semibold py-2 w-full">
                 Pay Now
               </button>
             </Container>
@@ -218,7 +218,7 @@ const Page = () => {
             <Container>
               <button
                 onClick={submit}
-                className="rounded bg-shade-120 text-white heading-6-lg text-center font-semibold py-2 w-full"
+                className="rounded hover:bg-neutral-50 bg-shade-120 text-white heading-6-lg text-center font-semibold py-2 w-full"
               >
                 Pay Now
               </button>

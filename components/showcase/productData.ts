@@ -48,11 +48,6 @@ export const products: ProductInterface[] = [
         highlighted: true,
         colorHighlightedIsWhite: true,
       },
-      {
-        color: black,
-        highlighted: false,
-        colorHighlightedIsWhite: false,
-      },
     ],
   },
   {
@@ -73,16 +68,6 @@ export const products: ProductInterface[] = [
         highlighted: true,
         colorHighlightedIsWhite: false,
       },
-      {
-        color: white,
-        highlighted: false,
-        colorHighlightedIsWhite: false,
-      },
-      {
-        color: pink,
-        highlighted: false,
-        colorHighlightedIsWhite: false,
-      },
     ],
   },
   {
@@ -94,11 +79,6 @@ export const products: ProductInterface[] = [
       {
         color: brown,
         highlighted: true,
-        colorHighlightedIsWhite: false,
-      },
-      {
-        color: black,
-        highlighted: false,
         colorHighlightedIsWhite: false,
       },
     ],
@@ -153,21 +133,6 @@ export const products: ProductInterface[] = [
         highlighted: true,
         colorHighlightedIsWhite: false,
       },
-      {
-        color: purple,
-        highlighted: false,
-        colorHighlightedIsWhite: false,
-      },
-      {
-        color: pink,
-        highlighted: false,
-        colorHighlightedIsWhite: false,
-      },
-      {
-        color: brown,
-        highlighted: false,
-        colorHighlightedIsWhite: false,
-      },
     ],
   },
   {
@@ -205,11 +170,6 @@ export const products: ProductInterface[] = [
       {
         color: black,
         highlighted: true,
-        colorHighlightedIsWhite: false,
-      },
-      {
-        color: white,
-        highlighted: false,
         colorHighlightedIsWhite: false,
       },
     ],

@@ -89,6 +89,10 @@ body.open {
   overflow: hidden;
 }
 
+button {
+  transition: all 0.3s ease;
+}
+
 .category-bar,
 .navbar section,
 .no-scrollbar {

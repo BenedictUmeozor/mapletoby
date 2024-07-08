@@ -40,7 +40,7 @@ const Cart = () => {
               Shopping Bag
             </span>
             <div
-              className=" h-10 w-10 rounded-sm flex items-center justify-center bg-neutral-50 cursor-pointer"
+              className=" h-10 hover:opacity-45 w-10 rounded-sm flex items-center justify-center bg-neutral-50 cursor-pointer"
               onClick={closeCart}
             >
               <XIcon />
@@ -63,7 +63,7 @@ const Cart = () => {
           </div>
           <div className="py-6 px-4">
             <button
-              className="w-full bg-shade-120 text-white h-12 rounded flex items-center justify-center gap-2"
+              className="w-full hover:bg-neutral-50 bg-shade-120 text-white h-12 rounded flex items-center justify-center gap-2"
               onClick={routeToCheckout}
             >
               <WalletIcon />

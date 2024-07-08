@@ -25,8 +25,8 @@ const Product = ({ product }: Props) => {
       <CartAction />
       <div className="mt-3">
         <p className="heading-6-lg text-shade-120 font-semibold block hover:underline">
-          {product.description.length > 15
-            ? product.description.substring(0, 15) + "..."
+          {product.description.length > 22
+            ? product.description.substring(0, 22) + "..."
             : product.description}
         </p>
         <p className=" text-primary-100 mt-1 mb-3 font-bold">
