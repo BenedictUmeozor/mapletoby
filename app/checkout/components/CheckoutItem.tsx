@@ -19,7 +19,7 @@ const CheckoutItem = ({ cart }: Props) => {
           height={100}
           className="w-28 h-28 rounded"
         />
-        <div className="absolute top-[-3%] right-[-3%] h-6 w-6 rounded-full flex items-center justify-center bg-shade-80">
+        <div className="absolute top-[-3%] right-[-3%] h-6 w-6 rounded-full flex items-center justify-center bg-[#ddd]">
           {cart.quantity}
         </div>
       </div>

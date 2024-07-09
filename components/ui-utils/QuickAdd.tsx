@@ -30,31 +30,31 @@ const QuickAdd = memo(({ product }: { product: ProductInterface }) => {
       </h4>
       <div className="flex gap-2 items-center flex-nowrap px-2">
         <button
-          className="flex-1 hover:opacity-45 rounded-sm border border-custom_blue-30"
+          className="flex-1 hover:opacity-45 text-[0.85rem] max-md:text-xs rounded-sm border border-custom_blue-30"
           onClick={() => handleAddToCart("XS")}
         >
           XS
         </button>
         <button
-          className="flex-1 hover:opacity-45 rounded-sm border border-custom_blue-30"
+          className="flex-1 hover:opacity-45 text-[0.85rem] max-md:text-xs rounded-sm border border-custom_blue-30"
           onClick={() => handleAddToCart("S")}
         >
           S
         </button>
         <button
-          className="flex-1 hover:opacity-45 rounded-sm border border-custom_blue-30"
+          className="flex-1 hover:opacity-45 text-[0.85rem] max-md:text-xs rounded-sm border border-custom_blue-30"
           onClick={() => handleAddToCart("M")}
         >
           M
         </button>
         <button
-          className="flex-1 hover:opacity-45 rounded-sm border border-custom_blue-30"
+          className="flex-1 hover:opacity-45 text-[0.85rem] max-md:text-xs rounded-sm border border-custom_blue-30"
           onClick={() => handleAddToCart("L")}
         >
           L
         </button>
         <button
-          className="flex-1 hover:opacity-45 rounded-sm border border-custom_blue-30"
+          className="flex-1 hover:opacity-45 text-[0.85rem] max-md:text-xs rounded-sm border border-custom_blue-30"
           onClick={() => handleAddToCart("XL")}
         >
           XL
