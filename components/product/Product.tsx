@@ -63,14 +63,14 @@ const Product = ({ product }: Props) => {
                     : color.color
                   : "transparent",
               }}
-              className="flex items-center justify-center h-6 w-6 rounded-full border cursor-pointer"
+              className="flex items-center justify-center h-6 w-6 max-md:h-4 max-md:w-4 rounded-full border cursor-pointer"
             >
               <div
                 style={{
                   borderColor: color.color === white ? "#E1E4EC" : color.color,
                   backgroundColor: color.color,
                 }}
-                className="h-4 w-4 rounded-full border"
+                className="h-4 w-4 max-md:h-2 max-md:w-2 rounded-full border"
               ></div>
             </div>
           ))}
