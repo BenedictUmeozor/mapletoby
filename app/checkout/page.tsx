@@ -152,7 +152,7 @@ const Page = () => {
                 <input
                   type="email"
                   placeholder="Email"
-                  className="px-4 heading-6-lg text-neutral-120 border border-neutral-50 rounded focus:outline-none h-full w-full"
+                  className="px-4 heading-6-lg text-neutral-120 border border-neutral-50 rounded focus:outline-none h-full w-full focus:placeholder:absolute focus:placeholder:top-1 focus:placeholder:left-4 transition-all duration-300 ease-linear focus:placeholder:text-[0.75rem]"
                   required
                   onChange={(e) =>
                     updateInfo({ ...billingInfo, email: e.target.value })

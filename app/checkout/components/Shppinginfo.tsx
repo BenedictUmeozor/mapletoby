@@ -60,7 +60,7 @@ const Shppinginfo = memo(() => {
               type="text"
               required
               placeholder="First Name"
-              className="px-4 heading-6-lg text-neutral-120 border border-neutral-50 rounded focus:outline-none h-full w-full"
+              className="px-4 focus:placeholder:absolute focus:placeholder:top-1 focus:placeholder:left-4 transition-all duration-300 ease-linear focus:placeholder:text-[0.75rem] heading-6-lg text-neutral-120 border border-neutral-50 rounded focus:outline-none h-full w-full"
               defaultValue={billingInfo.firstName}
               onChange={(e) =>
                 updateInfo({ ...billingInfo, firstName: e.target.value })
@@ -72,7 +72,7 @@ const Shppinginfo = memo(() => {
               type="text"
               required
               placeholder="Last Name"
-              className="px-4 heading-6-lg text-neutral-120 border border-neutral-50 rounded focus:outline-none h-full w-full"
+              className="px-4 focus:placeholder:absolute focus:placeholder:top-1 focus:placeholder:left-4 transition-all duration-300 ease-linear focus:placeholder:text-[0.75rem] heading-6-lg text-neutral-120 border border-neutral-50 rounded focus:outline-none h-full w-full"
               defaultValue={billingInfo.lastName}
               onChange={(e) =>
                 updateInfo({ ...billingInfo, lastName: e.target.value })
@@ -87,7 +87,7 @@ const Shppinginfo = memo(() => {
             type="text"
             required
             placeholder="Full Address (including city or town)"
-            className="px-4 heading-6-lg text-neutral-120 border border-neutral-50 rounded focus:outline-none h-full w-full"
+            className="px-4 focus:placeholder:absolute focus:placeholder:top-1 focus:placeholder:left-4 transition-all duration-300 ease-linear focus:placeholder:text-[0.75rem] heading-6-lg text-neutral-120 border border-neutral-50 rounded focus:outline-none h-full w-full"
             defaultValue={billingInfo.address}
             onChange={(e) =>
               updateInfo({ ...billingInfo, address: e.target.value })
@@ -101,7 +101,7 @@ const Shppinginfo = memo(() => {
             type="text"
             required
             placeholder="City"
-            className="px-4 heading-6-lg text-neutral-120 border border-neutral-50 rounded focus:outline-none h-full w-full"
+            className="px-4 focus:placeholder:absolute focus:placeholder:top-1 focus:placeholder:left-4 transition-all duration-300 ease-linear focus:placeholder:text-[0.75rem] heading-6-lg text-neutral-120 border border-neutral-50 rounded focus:outline-none h-full w-full"
             defaultValue={billingInfo.city}
             onChange={(e) =>
               updateInfo({ ...billingInfo, city: e.target.value })
@@ -150,7 +150,7 @@ const Shppinginfo = memo(() => {
             type="text"
             required
             placeholder="Phone Number"
-            className="px-4 heading-6-lg text-neutral-120 border border-neutral-50 rounded focus:outline-none h-full w-full"
+            className="px-4 focus:placeholder:absolute focus:placeholder:top-1 focus:placeholder:left-4 transition-all duration-300 ease-linear focus:placeholder:text-[0.75rem] heading-6-lg text-neutral-120 border border-neutral-50 rounded focus:outline-none h-full w-full"
             defaultValue={billingInfo.phoneNumber}
             onChange={(e) =>
               updateInfo({ ...billingInfo, phoneNumber: e.target.value })

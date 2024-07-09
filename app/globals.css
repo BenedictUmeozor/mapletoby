@@ -368,3 +368,27 @@ input[type="radio"]:checked:after {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+input::placeholder {
+  transition: all 0.3s ease;
+}
+
+/* For Mozilla Firefox */
+input::-moz-placeholder {
+  transition: all 0.3s ease;
+}
+
+/* For Internet Explorer 10-11 */
+input:-ms-input-placeholder {
+  transition: all 0.3s ease;
+}
+
+/* For Microsoft Edge */
+input::-ms-input-placeholder {
+  transition: all 0.3s ease;
+}
+
+/* For Google Chrome, Safari, and Opera */
+input::-webkit-input-placeholder {
+  transition: all 0.3s ease;
+}

@@ -79,7 +79,7 @@ const BillingAddress = () => {
                         type="text"
                         required
                         placeholder="First Name"
-                        className="px-4 heading-6-lg text-neutral-120 border border-neutral-50 rounded focus:outline-none h-full w-full"
+                        className="px-4 focus:placeholder:absolute focus:placeholder:top-1 focus:placeholder:left-4 transition-all duration-300 ease-linear focus:placeholder:text-[0.75rem] heading-6-lg text-neutral-120 border border-neutral-50 rounded focus:outline-none h-full w-full"
                         onChange={(e) =>
                           updateInfo({
                             ...billingInfo,
@@ -99,7 +99,7 @@ const BillingAddress = () => {
                             lastName: e.target.value,
                           })
                         }
-                        className="px-4 heading-6-lg text-neutral-120 border border-neutral-50 rounded focus:outline-none h-full w-full"
+                        className="px-4 focus:placeholder:absolute focus:placeholder:top-1 focus:placeholder:left-4 transition-all duration-300 ease-linear focus:placeholder:text-[0.75rem] heading-6-lg text-neutral-120 border border-neutral-50 rounded focus:outline-none h-full w-full"
                       />
                     </div>
                   </div>
@@ -113,7 +113,7 @@ const BillingAddress = () => {
                       onChange={(e) =>
                         updateInfo({ ...billingInfo, address: e.target.value })
                       }
-                      className="px-4 heading-6-lg text-neutral-120 border border-neutral-50 rounded focus:outline-none h-full w-full"
+                      className="px-4 focus:placeholder:absolute focus:placeholder:top-1 focus:placeholder:left-4 transition-all duration-300 ease-linear focus:placeholder:text-[0.75rem] heading-6-lg text-neutral-120 border border-neutral-50 rounded focus:outline-none h-full w-full"
                     />
                   </div>
                 </div>
@@ -126,7 +126,7 @@ const BillingAddress = () => {
                       onChange={(e) =>
                         updateInfo({ ...billingInfo, city: e.target.value })
                       }
-                      className="px-4 heading-6-lg text-neutral-120 border border-neutral-50 rounded focus:outline-none h-full w-full"
+                      className="px-4 focus:placeholder:absolute focus:placeholder:top-1 focus:placeholder:left-4 transition-all duration-300 ease-linear focus:placeholder:text-[0.75rem] heading-6-lg text-neutral-120 border border-neutral-50 rounded focus:outline-none h-full w-full"
                     />
                   </div>
                   <div className="h-14 flex-1 relative">
@@ -171,7 +171,7 @@ const BillingAddress = () => {
                       type="text"
                       required
                       placeholder="Phone Number (Optional)"
-                      className="px-4 heading-6-lg text-neutral-120 border border-neutral-50 rounded focus:outline-none h-full w-full"
+                      className="px-4 focus:placeholder:absolute focus:placeholder:top-1 focus:placeholder:left-4 transition-all duration-300 ease-linear focus:placeholder:text-[0.75rem] heading-6-lg text-neutral-120 border border-neutral-50 rounded focus:outline-none h-full w-full"
                       onChange={(e) =>
                         updateInfo({
                           ...billingInfo,
