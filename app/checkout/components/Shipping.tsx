@@ -69,7 +69,7 @@ const Shipping = () => {
               </label>
               <div className="flex flex-col justify-between">
                 <span className="heading-6-lg font-bold">{option.label}</span>
-                <span className="heading-6-lg text-shade-40">
+                <span className="heading-6-lg text-neutral-120">
                   {option.description}
                 </span>
               </div>

@@ -140,7 +140,7 @@ const Page = () => {
                   MAPLETOBY
                 </Link>
                 <div className="text-shade-120 caption font-bold">
-                  <span className="text-neutral-140">Blog /</span> Checkout
+                  <span className="text-neutral-140">Bag /</span> Checkout
                 </div>
               </Container>
             </header>
